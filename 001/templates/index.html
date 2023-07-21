@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h3>{{content}}</h3>
+    <div>
+        {% for x in range(10) %}
+            {% if x % 2 == 1%}
+                <p>{{x}}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div>
+        {% for x in names %}
+            <p>{{x}}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
